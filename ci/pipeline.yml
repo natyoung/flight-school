@@ -4,7 +4,7 @@ resources:
   source:
     uri: https://github.com/natyoung/flight-school
     branch: master
-    
+
 - name: staging-app
   type: cf
   source:
