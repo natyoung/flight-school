@@ -32,7 +32,7 @@ RSpec.describe "The FlightSchool application" do
     expect(last_response.body).to include("San Francisco")
   end
 
-  it "returns a 404 if the airport cannot be found" do
+  it "returns a 404 if the airport cannot be founded" do
     get "/airports/EDI"
     expect(last_response).to be_not_found
     expect(last_response.body).to include("Couldn't find that airport!")
